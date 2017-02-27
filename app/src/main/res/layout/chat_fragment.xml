@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:text="172.23.65.157"
+        android:hint="server ip"
+        android:id="@+id/server_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:hint="server status"
+        android:id="@+id/server_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/p2p_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <Button
+               android:text="Connect to ip"
+               android:id="@+id/connect_to_ip"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <Button
+               android:text="Start listening..."
+               android:id="@+id/listen_to_ip"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <Button
+               android:text="send message"
+               android:id="@+id/send_message"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>
